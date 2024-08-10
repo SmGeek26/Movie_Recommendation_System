@@ -11,8 +11,6 @@ with open('rating_pivot.pkl', 'rb') as f:
 
 # Load the film data with genres
 film_cast = pd.read_csv('final_films.csv')
-
-# Ensure the genres column is properly processed
 film_cast['genres'] = film_cast['genres'].fillna('Unknown')
 
 # Function to extract genre names from the JSON-like structure
