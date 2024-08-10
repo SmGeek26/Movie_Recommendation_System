@@ -5,8 +5,8 @@ from scipy.sparse import csr_matrix
 from sklearn.neighbors import KNeighborsClassifier
 
 # Load datasets
-films = pd.read_csv(r"F:\Machine Learning\Movie_ Recommendation\movies_metadata.csv", on_bad_lines='skip')
-link = pd.read_csv(r"F:\Machine Learning\Movie_ Recommendation\links.csv")
+films = pd.read_csv("movies_metadata.csv", on_bad_lines='skip')
+link = pd.read_csv("links.csv")
 
 # Print initial overview
 print(films.head(5))
